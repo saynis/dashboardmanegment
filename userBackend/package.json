@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
-  "scripts": {
-    "start": "nodemon server/main.js"
-  },
+ "scripts": {
+  "start": "node server/main.js"
+ },
   "keywords": [],
   "author": "",
   "license": "ISC",

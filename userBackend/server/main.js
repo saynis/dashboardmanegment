@@ -1,6 +1,5 @@
 import express from "express";
 const app = express();
-const port = 2000;
 import cors from 'cors';
 app.use(express.json());
 
@@ -22,6 +21,5 @@ app.use("/api/authors", authorRoute);
 import booksRoute from "../routes/booksRoute.js";
 app.use("/api/books/",booksRoute);
 
-app.listen(port, () => {
-  console.log(`http://localhost:${port}`);
-});
+const port = process.env.PORT || 2000;
+app.listen(port, () => console.log(`http://localhost:${port}`));
